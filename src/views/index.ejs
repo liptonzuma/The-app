@@ -5,12 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.css.map">
-
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="hamburger">
+        <i class="fa fa-bars icon"></i>
+    </div>
+    <div class="nav-links">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="<%= default_avatar %> " alt="avatar" class="avatar img-circle">
+                </a>
+            </li>
+            <li><a href="">User's Profile</a></li>
+            <li><a href="">Notifications <i class="badge badge-secondary">0</i></a></li>
+            <li><a href="">Redeem Promo code</a></li>
+            <li><a href="">Setting</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </div>
+
+    <script src="/js/animations.js"></script>
 </body>
 
 </html>

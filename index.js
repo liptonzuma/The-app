@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000
 //All use statements goes here
 app.use(express.static(path.join(__dirname, '/public/')))
 app.use('/css', express.static(path.join(__dirname, '/node_modules/font-awesome/css/')))
+app.use('/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')))
 app.use('/css', express.static(path.join(__dirname, '/public/css/')))
 app.use('/js', express.static(path.join(__dirname, '/public/js/')))
 app.use('/img', express.static(path.join(__dirname, '/public/img/')))
@@ -18,7 +19,7 @@ app.set('views', './src/views')
 //All Routes statements goes here
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'App'
+        default_avatar: '/img/deliveries.svg'
     })
 })
 
