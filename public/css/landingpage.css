@@ -114,6 +114,7 @@ figure {
     background: #a7226e;
     font-family: 'Play', cursive;
     color: #2b292a;
+    height: 100%;
 }
 
 .content {
@@ -134,12 +135,13 @@ figure {
 
 .how-it-works {
     overflow: hidden;
+    height: 100%;
 }
 
 .join {
     background: #2b292a;
     color: #a7226e;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Play', cursive;
 }
 

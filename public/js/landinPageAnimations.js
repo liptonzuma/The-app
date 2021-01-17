@@ -52,3 +52,10 @@ gsap.from('.hit', {
     start: "bottom center",
     stagger: 1
 })
+if (window.innerWidth <= 991) {
+    const links = document.querySelectorAll('.nav-link');
+    const icon = document.querySelector('.navbar-toggler-icon')
+    links.forEach(elem => elem.addEventListener('click', () => {
+        icon.click()
+    }))
+}
