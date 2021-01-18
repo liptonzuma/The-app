@@ -5,7 +5,6 @@ const menu = document.querySelector('.nav-links')
 icon.addEventListener('click', () => {
     menu.classList.toggle('hide')
     icon.classList.toggle('pos')
-    console.log(change.className)
     changeIcons()
 })
 
