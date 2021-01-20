@@ -5,17 +5,17 @@ html {
 nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 650;
-    background: #2f9599 !important;
+    background: #2bae66ff !important;
 }
 
 .navbar-brand {
     font-size: 1.4rem;
-    color: #a7226e !important;
+    color: #ddd !important;
     font-family: 'Lobster', cursive;
 }
 
 .nav-link {
-    color: #a7226e !important;
+    color: #ddd !important;
     font-family: 'Play', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -24,27 +24,28 @@ nav {
 }
 
 .buttons .btn {
-    color: #2f9599;
-    background: #a7226e;
+    background-color: #ffffff;
+    color: #2bae66ff;
     position: relative;
     z-index: 999;
 }
 
 .buttons .btn:hover {
-    color: #a7226e;
-    background: #000;
+    background: #2bae66ff;
+    color: #ffff;
+    opacity: .6;
 }
 
 .nav-link:hover {
-    background: #a7226e;
-    color: #2f9599 !important;
+    background: #ffff;
+    color: #2bae66ff !important;
     border-radius: 0.3rem;
 }
 
 header {
     height: 100%;
     width: 100%;
-    background: #2f9599;
+    background: #2bae66ff;
     padding-top: 10rem;
     padding-bottom: 7rem;
 }
@@ -58,7 +59,7 @@ header {
 }
 
 .text2 {
-    color: #a7226e;
+    color: #ddd !important;
 }
 
 .deliveries {
@@ -67,8 +68,8 @@ header {
 
 .features {
     font-family: 'Play', cursive;
-    background-color: #2b292a;
-    color: #a7226e;
+    background-color: rgb(196, 241, 196);
+    color: #2bae66ff;
     height: 100%;
     padding-top: 4.5rem;
     overflow: hidden;
@@ -89,7 +90,7 @@ header {
 }
 
 .coming {
-    color: #a7226e;
+    color: #2bae66ff;
     font-style: bold;
     font-family: 'Play', cursive;
 }
@@ -111,9 +112,9 @@ figure {
 
 .how-it-works {
     padding-top: 3rem;
-    background: #a7226e;
+    background: rgb(196, 241, 196) !important;
     font-family: 'Play', cursive;
-    color: #2b292a;
+    color: #2bae66ff;
     height: 100%;
 }
 
@@ -125,12 +126,13 @@ figure {
 
 .courier {
     max-width: 100%;
-    background: #2b292a;
-    color: #a7226e;
+    background: #fff;
+    color: #2bae66ff;
 }
 
 .item-owner {
-    background: #2f9599;
+    background: #2bae66ff;
+    color: #ddd;
 }
 
 .how-it-works {
@@ -139,19 +141,20 @@ figure {
 }
 
 .join {
-    background: #2b292a;
-    color: #a7226e;
+    background: #2bae66ff;
+    color: #ddd;
     overflow-x: hidden;
     font-family: 'Play', cursive;
 }
 
 .join .btn {
-    background: #a7226e;
-    color: #2b292a;
+    background: #ddd;
+    color: #2bae66ff;
 }
 
 .join .btn:hover {
-    background: #2f9599;
+    background: rgb(143, 219, 177);
+    color: #fff;
 }
 
 .join-info {
