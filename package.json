@@ -2,10 +2,9 @@
     "name": "The-app",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon index.js"
+        "start": "nodemon src/index.js"
     },
     "repository": {
         "type": "git",
@@ -14,12 +13,9 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/liptonzuma/The-app/issues"
-    },
-    "homepage": "https://github.com/liptonzuma/The-app#readme",
     "dependencies": {
         "bootstrap": "^4.5.3",
+        "dotenv": "^8.2.0",
         "ejs": "^3.1.5",
         "express": "^4.17.1",
         "font-awesome": "^4.7.0",
