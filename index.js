@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const userRouter = require('./src/routes/userRoute');
+const authRoute = require('./src/routes/authRoutes');
 const app = express();
 
 
@@ -20,6 +21,7 @@ app.use('/img', express.static(path.join(__dirname, '/public/img/')))
 
 //use route statements goes here
 app.use('/user', userRouter)
+app.use('/join', authRoute)
 
 //All set statements goes here
 app.set('view engine', 'ejs')
