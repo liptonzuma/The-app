@@ -1,1 +1,77 @@
-register
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Play&display=swap" rel="stylesheet">
+    <link rel="icon" href=" https://img.icons8.com/pastel-glyph/64/000000/delivery-scooter--v1.png">
+
+</head>
+
+<body>
+    <!--The app banner for the register page-->
+    <header class="banner text-center fixed-top  alert">
+        <a href="/" class="text-decoration-none " style="color:#ddd">
+            <%=appName%>
+        </a>
+    </header>
+    <main class="pt-5">
+        <section class="banner-section">
+            <h2 class="pt-5 text-center text-uppercase">register as</h2>
+            <div class="buttons text-center container pt-3">
+                <button class="deliver-for-me btn">Deliver For Me</button>
+                <button class="courier btn">Courier</button>
+            </div>
+        </section>
+        <!--I have left the action blank-->
+        <section class="deliver-for-me-section container m-auto pt-5 row mb-5">
+            <div class="col-md-6">
+                <img src="/img/register.svg" alt="image" class="image">
+            </div>
+            <legend class="col-md-6 m-auto">
+                <fieldset class="text-center field">Registering as deliver for me</fieldset>
+                <form action="" class="form-group row " name="deliver-for-me-form">
+                    <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username">
+                    <input type="tel" class="col-12 form-control p-2 my-3" name="phone" placeholder="Enter your number">
+                    <input type="email" class="col-12 form-control p-2 my-3" name="email" placeholder="Enter your email">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password-confirm" placeholder="Confirm password">
+                    <input type="submit" value="Register" class="col-12 btn text-enter input-but">
+                    <a href="/join/login" class="col-12 text-center text-decoration-none" style="color: #2bae66ff;">Already have an account</a>
+                </form>
+            </legend>
+
+        </section>
+        <section class="courier-section container m-auto pt-5 row">
+            <div class="col-md-6">
+                <img src="/img/courier.svg" alt="image" class="image">
+            </div>
+            <legend class="col-md-6 m-auto">
+                <fieldset class="text-center field">Registering as courier</fieldset>
+                <form action="" class="form-group row " name="deliver-for-me-form">
+                    <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username">
+                    <input type="tel" class="col-12 form-control p-2 my-3" name="phone" placeholder="Enter your number">
+                    <input type="email" class="col-12 form-control p-2 my-3" name="email" placeholder="Enter your email">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password-confirm" placeholder="Confirm password">
+                    <input type="submit" value="Register" class="col-12 btn text-enter input-but">
+                    <a href="/join/login" class="col-12 text-center text-decoration-none" style="color: #2bae66ff;">Already have an account</a>
+                    <i class="fa fa-chevron-back"></i>
+                </form>
+            </legend>
+
+        </section>
+    </main>
+    <script src="/js/register.js"></script>
+
+</body>
+
+</html>
