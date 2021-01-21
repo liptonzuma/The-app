@@ -8,9 +8,12 @@ owner.addEventListener('click', () => {
     courierForm.style.display = "none"
     ownerForm.classList.add('come')
     buttons.style.display = "none"
+
 })
 courier.addEventListener('click', () => {
     ownerForm.style.display = "none"
     courierForm.classList.add('bring')
     buttons.style.display = "none"
+
+
 })
