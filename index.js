@@ -1,5 +1,9 @@
 const express = require("express");
 const path = require("path");
+const bodyParser = require('body-parser')
+const session = require('express-session')
+const cookieParser = require('cookie-parser')
+
 const userRouter = require("./src/routes/user");
 const authRoute = require("./src/routes/auth");
 const app = express();
@@ -7,6 +11,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //All use statements goes here
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(session({ secret: "secret" }))
+app.use(cookieParser())
 app.use(express.static(path.join(__dirname, "/public/")));
 app.use(
     "/css",

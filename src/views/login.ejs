@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Play&display=swap" rel="stylesheet">
+    <link rel="icon" href=" https://img.icons8.com/pastel-glyph/64/000000/delivery-scooter--v1.png">
+
+</head>
+
+<body class=" text-center m-auto">
+    <header class="banner text-center fixed-top  alert">
+        <a href="/" class="text-decoration-none " style="color:#ddd">
+            <%=appName%>
+        </a>
+    </header>
+    <main role="main">
+        <div class="container m-auto item-owner">
+            <legend class="col-md-6 m-auto pt-5 container ">
+                <fieldset class="text-center field pb-3">Login as Item Owner</fieldset>
+                <form action="/join/login" class="form-group row " autocomplete="on" name="login" method="POST">
+                    <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password">
+                    <input type="submit" value="Login" class="col-12 btn text-enter input-but ">
+                    <a href="/join/register" class="col-12 text-center text-decoration-none pt-2" style="color: #2bae66ff;">Not Registered?</a>
+                    <div class="container text-center mt-3"><button class="btn instead courierInstead btn-outline-success"><i class="fa fa-sign-out">Login as courier instead</i></button></div>
+                </form>
+            </legend>
+
+        </div>
+        <div class="container m-auto courier">
+            <legend class="col-md-6 m-auto pt-5 container ">
+                <fieldset class="text-center field pb-3">Login as Courier</fieldset>
+                <form action="/join/login/courier" class="form-group row " name="login" method="POST" autocomplete="on">
+                    <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password">
+                    <input type="submit" value="Login" class="col-12 btn text-enter input-but ">
+                    <a href="/join/register" class="col-12 text-center text-decoration-none pt-2" style="color: #2bae66ff;">Not Registered?</a>
+                    <div class="container text-center mt-3 last"><button class="btn instead ownerInstead btn-outline-success"><i class="fa fa-sign-out">Login as Item owner instead</i></button></div>
+                </form>
+            </legend>
+
+        </div>
+    </main>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

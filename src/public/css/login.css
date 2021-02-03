@@ -1,0 +1,65 @@
+body {
+    padding-top: 6rem !important;
+    background: rgb(240, 241, 240);
+    padding-bottom: 5rem;
+}
+
+header {
+    background: #2bae66ff;
+    font-size: 1.3rem;
+    font-family: "Lobster", sans-serif;
+}
+
+legend {
+    border: 2px solid rgb(174, 204, 176);
+    padding: 3rem !important;
+    box-shadow: 0.3rem 0.3rem rgb(217, 235, 218);
+}
+
+fieldset {
+    color: #2bae66ff;
+    font-family: "Play", cursive;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-but {
+    background: rgb(174, 204, 176);
+    transition: 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.input-but:hover {
+    background: #2bae66ff;
+    color: #ddd;
+}
+
+.instead,
+.last {
+    font-family: 'Lobster', cursive !important;
+}
+
+.courier {
+    position: relative;
+    top: 0;
+    left: -100%;
+    display: none;
+    transition: 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.item-owner {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.right {
+    left: 0%;
+    display: block;
+}
+
+.left {
+    right: -100%;
+    display: none;
+}
