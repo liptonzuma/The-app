@@ -38,12 +38,12 @@
             </div>
             <legend class="col-md-6 m-auto">
                 <fieldset class="text-center field">Registering as deliver for me.</fieldset>
-                <form action="" class="form-group row " name="deliver-for-me-form">
+                <form action="/join/deliver-for-me" autocomplete="on" class="form-group row " name="deliver-for-me-form" method="POST">
                     <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username">
                     <input type="tel" class="col-12 form-control p-2 my-3" name="phone" placeholder="Enter your number">
                     <input type="email" class="col-12 form-control p-2 my-3" name="email" placeholder="Enter your email">
                     <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password">
-                    <input type="password" class="col-12 form-control p-2 my-3" name="password-confirm" placeholder="Confirm password">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password_confirm" placeholder="Confirm password">
                     <input type="submit" value="Register" class="col-12 btn text-enter input-but">
                     <a href="/join/login" class="col-12 text-center text-decoration-none" style="color: #2bae66ff;">Already have an account</a>
                 </form>
@@ -58,12 +58,12 @@
             </div>
             <legend class="col-md-6 m-auto">
                 <fieldset class="text-center field">Registering as courier</fieldset>
-                <form action="" class="form-group row " name="deliver-for-me-form">
-                    <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username">
-                    <input type="tel" class="col-12 form-control p-2 my-3" name="phone" placeholder="Enter your number">
-                    <input type="email" class="col-12 form-control p-2 my-3" name="email" placeholder="Enter your email">
-                    <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password">
-                    <input type="password" class="col-12 form-control p-2 my-3" name="password-confirm" placeholder="Confirm password">
+                <form action="/join/login/courier" class="form-group row " autocomplete="on" name="courier-form" method="POST">
+                    <input type="text" class="col-12 form-control p-2 my-3" name="username" placeholder="Enter your username" minlength="5">
+                    <input type="tel" class="col-12 form-control p-2 my-3" name="phone" placeholder="Enter your number" minlength="10">
+                    <input type="email" class="col-12 form-control p-2 my-3" name="email" placeholder="Enter your email" minlength="8">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password" placeholder="Enter your password" minlength="8">
+                    <input type="password" class="col-12 form-control p-2 my-3" name="password_confirm" placeholder="Confirm password" minlength="8">
                     <input type="submit" value="Register" class="col-12 btn text-enter input-but">
                     <a href="/join/login" class="col-12 text-center text-decoration-none" style="color: #2bae66ff;">Already have an account</a>
                     <i class="fa fa-chevron-back"></i>
