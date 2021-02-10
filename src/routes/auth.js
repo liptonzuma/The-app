@@ -3,6 +3,8 @@ const { MongoClient } = require("mongodb")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const keys = require("../config/keys")
+const { LocalStorage } = require("node-localstorage")
+const localstorage = new LocalStorage("/scratch")
 
 const router = express.Router();
 
@@ -88,6 +90,7 @@ router.post('/register/courier', (req, res) => {
 
 })
 
+
 //Handling login post request for item owner
 
 router.post('/login', (req, res) => {
@@ -96,6 +99,7 @@ router.post('/login', (req, res) => {
     const { username, password } = req.body;
     (async function findUser() {
         let client;
+
 
         try {
             client = await MongoClient.connect(url)
@@ -108,8 +112,11 @@ router.post('/login', (req, res) => {
                 //will do later
             if (verified) {
                 jwt.sign({ user }, keys.secret, (err, token) => {
-                    res.json({ token })
+                    console.log(token)
+
+                    res.redirect('/user')
                 })
+
 
             }
         } catch (err) {
