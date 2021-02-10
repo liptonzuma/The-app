@@ -3,6 +3,7 @@ const path = require("path");
 const bodyParser = require('body-parser')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
+const cors = require('cors')
 
 const userRouter = require("./src/routes/user");
 const authRoute = require("./src/routes/auth");
@@ -11,6 +12,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //All use statements goes here
+app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(session({ secret: "secret" }))
